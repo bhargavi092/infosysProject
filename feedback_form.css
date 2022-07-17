@@ -52,7 +52,7 @@
     
     .rating > label:hover:before,
     .rating > label:hover ~ label:before {
-    opacity: 1 !important; color:blueviolet;
+    opacity: 1 !important; color:blue;
     }
     
     .rating > input:checked ~ label:before{
