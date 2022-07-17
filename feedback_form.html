@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Infosys Limited Recruitment</title>
+    <link rel="stylesheet" type="text/css" href="feedback_form.css" />
+    <link rel="icon" href="info3.jpg" />
+    <script
+      src="https://kit.fontawesome.com/5d4d2dbc25.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <a href="form.html"><div class="icon">&#10005</div></a>
+    <a href="infosys.html"><div class="icon2"><i class="fa-solid fa-arrow-left-long"></i></div></a>
+<div class="box1">
+<img src="https://surveys.infosysapps.com/services/fileserver/api/downloadFile/logo/kpi6a44gpn9qo.png" width="140" height="80" />
+<p class="f1">Infosys Surveys Feedback</p>
+</div>
+<div class="container">
+    <h3>1.&nbsp;Rate your experience</h3>
+    <div  class="rating">
+
+        <input type="radio" name="rating" id="media" value="5" id="5"><label for="5" id="label5" onclick="five();">☆</label>
+        <input type="radio" name="rating" id="media" value="4" id="4"><label for="4" id="label4" onclick="four();">☆</label>
+        <input type="radio" name="rating" id="media" value="3" id="3"><label for="3" id="label3" onclick="three();">☆</label>
+        <input type="radio" name="rating" id="media" value="2" id="2"><label for="2" id="label2" onclick="two();">☆</label>
+        <input type="radio" name="rating" id="media" value="1" id="1"><label for="1" id="label1" onclick="one();">☆</label>
+    </div>
+
+    <label style="color:red;display:none;" id="valid1"><button id="btn">x</button>This field is required</label>
+    <label style="color:red;display:none;" id="valid2"><button id="btn">x</button>The response should be in ^.+@.+$ format</label>
+    <h3>2.&nbsp; Your Email address</h3>
+    <p class="para1">
+        Please do not key in any personally identifiable information<br> belonging to you or any other person(s) which is unrelated to the <br>business purpose of this survey...
+        <br>
+    </p>
+    <form action="active">
+        <input class="input-field" type="textarea" id="testarea" required>
+    </form>
+    
+    <h3 id="h3">3.&nbsp;Leave us a comment</h3><p id="para">(optional)</p>
+    <p class="para1">
+        Please do not key in any personally identifiable information<br> belonging to you or any other person(s) which is unrelated to the <br>business purpose of this survey...
+    </p>
+    <form action="active">
+        <input class="input-field2" type="textarea">
+    </form>
+    <div class="box2">
+        <div class="cam">
+            <div class="cam2">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div> <p>Screenshot</p></div>
+        </div>
+        <div class="video">
+            <div class="video2">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div><p>Video</p></div>
+        </div>
+    </div>
+
+
+</div>
+            <center><button class="feed" onclick="validate();">Send Feedback</button></center>
+    <div class="img2">
+      <a href="#"
+        ><img
+          class="i2"
+          src="https://surveys.infosysapps.com/assets/logo/infosysSurveys-logo-blue-ai.svg" width="190px" height="80px"
+      /></a>
+    </div>
+    <script>
+        function five() {
+            document.getElementById("label5").style.color = "blueviolet";
+            document.getElementById("label4").style.color = "blueviolet";
+            document.getElementById("label3").style.color = "blueviolet";
+            document.getElementById("label2").style.color = "blueviolet";
+            document.getElementById("label1").style.color = "blueviolet";
+           
+        }
+        function four() {
+            document.getElementById("label5").style.color = "black";
+            document.getElementById("label4").style.color = "blueviolet";
+            document.getElementById("label3").style.color = "blueviolet";
+            document.getElementById("label2").style.color = "blueviolet";
+            document.getElementById("label1").style.color = "blueviolet";
+        }
+        function three() {
+            document.getElementById("label5").style.color = "black";
+            document.getElementById("label4").style.color = "black";
+            document.getElementById("label3").style.color = "blueviolet";
+            document.getElementById("label2").style.color = "blueviolet";
+            document.getElementById("label1").style.color = "blueviolet";
+        }
+        function two() {
+            document.getElementById("label5").style.color = "black";
+            document.getElementById("label4").style.color = "black";
+            document.getElementById("label3").style.color = "black";
+            document.getElementById("label2").style.color = "blueviolet";
+            document.getElementById("label1").style.color = "blueviolet";
+        }
+        function one() {
+            document.getElementById("label5").style.color = "black";
+            document.getElementById("label4").style.color = "black";
+            document.getElementById("label3").style.color = "black";
+            document.getElementById("label2").style.color = "black";
+            document.getElementById("label1").style.color = "blueviolet";
+        }
+
+        function validate() {
+            var email = document.getElementById("testarea").value;
+            var res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (email.length < 4) {
+                document.getElementById("valid2").style.display = "none";
+                document.getElementById("valid1").style.display = "block";
+               
+            }
+            else if (res.test(email) == false) {
+                document.getElementById("valid1").style.display = "none";
+                document.getElementById("valid2").style.display = "block";
+            }
+            else {
+
+                document.getElementById("valid1").style.display = "none";
+                document.getElementById("valid2").style.display = "none";
+            }
+        }
+        
+    </script>
+
+
+</body>
+</html>

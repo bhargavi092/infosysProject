@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys Limited Recruitment</title>
+    <link rel="icon" href="info3.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="mainDiv">
+        <div id="topDiv">
+            <img src="https://surveys.infosysapps.com/services/fileserver/api/downloadFile/logo/kpi6a44gpn9qo.png" height="80px" width="150px" id="image"/>
+            <div id="addDiv" style="display:none;" ><span style="font-size: 17px;position: absolute; right: 7px;top: 5px">&#9747;</span></div>
+        </div>
+        <div id="middleDiv" class="inline">
+            <a href="feedback.html"><img src="feedback.png" id="feedback" target="main"></a>
+            <a href="#" id="error"></a>
+            <div class="span">
+                <span class="text" id="txt1">Infosys Limited Recruitment</span>
+                <span class="text" id="txt2">Electronic City,Hosur Road,Bangalore-560100,India</span>
+                <span class="text" id="txt3">APPLICATION FOR EMPLOYMENT</span>
+                <span class="text" id="txt4">Proof Of Identity</span>
+            </div>
+            
+            <div class="redDiv"  style="display: none;" id="redDiv"><span id=redDivText>Please add a file</span></div>
+            <div id="fileDiv" >
+                <h5>1.   Please upload your college photo identity card or government photo identity proof in PDF for varification</h5>
+                <p id="p1">Please do not uploas Aadhar card as your identity proof</p>
+                <p>Up to 1 file,only pdf with max size of 5MB</p>
+                <div id="main">
+                    <div class="drop-zone">
+                        <span class="drop-zone__prompt">Drag and drop file <br>or <br> <span id="drop">Browse</span></span>
+                        <input type="file" name="myFile" class="drop-zone__input" accept="APPLICATION/pdf,APPLICATION" id="input"> 
+                    </div>
+                    <div class="two">
+                            <div id="uploaded-files"><b>uploaded files:</b></div>
+                            <div class="files-area">
+                                <div class="img" id="img5" style="display: none;"><img src="pdflogo.png" style= "height: 30px; width: 22px;"></div>
+                                <div class="filename">
+                                    <span id="x">&times;</span>
+                                    <progress value="10" max="100" id="progressbar" style="display: none;"></progress>
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <button id="previousBtn">PREVIOUS PAGE</button>
+        <button id="nextBtn" onclick="return fileValidation();">NEXT PAGE</button>
+        <div id="tableDiv" style="display: none;">
+            <table >
+                <tr>
+                    <td colspan="3" style="color: red;font-weight:700;font-size:18px">Errors</td >
+                </tr>
+                <tr>
+                    <td id="tdWidth" style="font-size:14px ;">Question</td><td style="font-size:14px ;color: red;">Error</td><td style="font-size:14px ;">Action</td>
+                </tr>
+                <tr id="trHover">
+                    <td id="tdWidth" style="font-size:14px ;">Please upload your college photo identity card or governmentphoto identity proof in PDF for verification</td>
+                    <td style="font-size:14px ;color: red;">Please add a file</td><td style="font-size:14px ;"><a href="#error"><i class="fa fa-eye"></i></a></td> 
+                </tr>
+            </table>
+        </div>
+        <div id="footerDiv">
+            <div class="finline"><form><span>45 of 97 answered </span><progress value="45" max="100">45%</progress></form></div>
+            <b>Estimated Time : 29 mins</b>
+            <button id="fnextBtn" onclick="return fileValidation();">NEXT PAGE</button>
+        </div>
+    </div>
+    <script src="group4.js"></script>
+</body>
+</html>
