@@ -52,7 +52,7 @@
     
     .rating > label:hover:before,
     .rating > label:hover ~ label:before {
-    opacity: 1 !important; color:red;
+    opacity: 1 !important; color:blueviolet;
     }
     
     .rating > input:checked ~ label:before{
@@ -63,7 +63,7 @@
   .para1{
     margin-left: 35px;
     opacity:60%;
-  color:red;
+  color:blueviolet;
   }
   .input-field {
     background: transparent;
